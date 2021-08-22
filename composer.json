@@ -1,0 +1,25 @@
+{
+  "name": "veryha/bot",
+  "authors": [
+    {
+      "name": "Mykola Veryha",
+      "email": "Mykola.Veryha@pfizer.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "irazasyed/telegram-bot-sdk": "dev-develop",
+    "vlucas/phpdotenv": "5.3.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pretzel\\": "src/"
+    },
+    "files": [
+      "helpers.php"
+    ]
+  },
+  "scripts": {
+    "dev": "php -S localhost:8080 -t public &>/dev/null & expose share localhost:8080 --subdomain=pbbot"
+  }
+}
